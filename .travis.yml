@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: q0wxyQJDjq0sY16SgS1JtSH5B1+wj2BM+4KicaN4IfyBMTODrDPWAV+UfBRyU6gm2MtSk2u9iYg0WjxxLytK9gwvRuMTHQfWJbh151ayWpJ1Bq1LKySlHpY675RI/HlQYn7bqiZAqQpwJGqjJrizRaq/bWBlzwv0BgYw5DY91bfVr+cmTsgc8+zzqDnX/hQSdANaxIR/8xfbYtKKdAwVkTZjGKjCoKksHSabSsCZYGDyLCQvYDxIpjpDGhWYg9D+gnfkmdMa1ITe3ohvAXuOZebfgoiJbhMEe0pzQh05GxR+lhVJfGkn40RKE4LMFqHZcA2Fe00F58WKkxfJf6PqZPm8a5CH0pLKI2dRNEixYopJvJCGsCY5DwSwMDrQ4ebFDb1GSzGeg8Dr33E0rpJ1n22QWFXJbhzOMjweI36pZ7e4QSvOu8kRrEhARnOGOqlZ1rBDu9roDhYdKqYP4f4PZxPP50JzvL3EA5xI7AdvB9e0D2ak6H7LfOeLDgvV9s2ebKE6bno6ZHny40Kj1BchEgVNLngc4vhEcLbopuA22i3UGIep/ijjt2O5JrPCg6SyOPMKdljRbGu3gqjPANpQclsPkCEeGH58BnJDXRvscn2/+A4YKTXvv94bGYapfO+GJWXsK0LroqPdQ5V7BFGknO4A/2GkcQ5fE9wvAvnQj2A=
+  app: stark-retreat-30907
+  on:
+    repo: hd21/node-restaurants-app-mongoose
+    branch: feature/with-tests
